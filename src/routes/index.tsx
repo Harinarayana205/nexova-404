@@ -54,6 +54,7 @@ function NotFoundPage() {
       const id = requestAnimationFrame(() => setMenuVisible(true));
       return () => cancelAnimationFrame(id);
     }
+    return undefined;
   }, [mobileMenuOpen]);
 
   const closeMenu = () => {
